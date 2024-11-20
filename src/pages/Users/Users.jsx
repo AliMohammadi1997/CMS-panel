@@ -1,7 +1,7 @@
 import { DataGrid } from '@mui/x-data-grid';
 import { useState } from 'react';
 import { rowUsers } from '../../data';
-import EditIcon from '@mui/icons-material/Edit';
+// import EditIcon from '@mui/icons-material/Edit';
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import './Users.css'
 import { Link } from 'react-router-dom';
@@ -12,6 +12,11 @@ import { Link } from 'react-router-dom';
 const Users = () => {
 
     const [userData, setUserData] = useState(rowUsers)
+
+    const deletHandler =(userId) => {
+        setUserData(userData.filter(user => user.id !== userId) )
+
+    }
 
     const columns = [
         {
@@ -50,13 +55,13 @@ const Users = () => {
             renderCell: (params) => {
                 return (
                     <div className='userListAction'>
-                        <Link to='/' className='link'>
+                        <Link to={`/user/${params.row.id}`} className='link'>
                             <button className="userListbtn">
                                 {/* <EditIcon className='userListIcon'/> */}Edit
                             </button>
                         </Link>
 
-                        <button className="userListRemove">
+                        <button className="userListRemove" onClick={() => {deletHandler(params.id)}}>
                             <DeleteOutlinedIcon />
                         </button>
                     </div>
@@ -78,7 +83,7 @@ const Users = () => {
                 initialState={{
                     pagination: {
                         paginationModel: {
-                            pageSize: 2,
+                            pageSize: 4,
                         },
                     },
                 }}
