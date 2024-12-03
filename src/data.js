@@ -132,6 +132,56 @@ let rowUsers = [
         status:'active',
         transaction:'$100'
     },
+];
+
+
+let products = [
+    {
+        id:1,
+        title: 'Asus',
+        price: 100,
+        avatar :'/asus.jfif'
+    },
+    {
+        id:2,
+        title: 'Aser',
+        price: 150,
+        avatar :'/aser.jfif'
+    },
+    {
+        id:3,
+        title: 'Hp',
+        price: 200,
+        avatar :'/hp.jfif'
+    },
+    {
+        id:4,
+        title: 'Lenovo',
+        price: 130,
+        avatar :'/Lenovo.jfif'
+    },
+    {
+        id:5,
+        title: 'Sony',
+        price: 110,
+        avatar :'/sony.jfif'
+    },
+];
+
+
+const productInfo = [
+    {
+        'name':'Jan',
+        'sales':300,
+    },
+    {
+        'name':'Feb',
+        'sales':500,
+    },
+    {
+        'name':'Mar',
+        'sales':400,
+    },
 ]
 
-export  {xAxisData,newUser,transAction,rowUsers};
+export  {xAxisData,newUser,transAction,rowUsers,products,productInfo};

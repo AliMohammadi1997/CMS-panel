@@ -1,0 +1,142 @@
+.product {
+    flex: 4;
+    padding: 30px;
+}
+
+.productTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productTitleBtn {
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.productTop {
+    display: flex;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.productTopLeft {
+    flex: 2;
+}
+
+.productTopRight {
+    flex: 1;
+    margin-left: 30px;
+    padding: 20px;
+    box-shadow: 0 0 15px -10px black;
+}
+
+
+.productInfoTop {
+    display: flex;
+    align-items: center;
+}
+
+.productInfoImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.productInfoTopName {
+    font-size: 24px;
+
+}
+
+.productInfoBottom {
+    margin-top: 10px;
+}
+
+
+.productInfoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    margin: 10px;
+    break-inside: 5px;
+}
+
+.productInfoKey {
+    font-weight: 600;
+}
+
+.productInfoValue {
+    opacity: 0.75;
+}
+
+
+.productBottom {
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 15px -9px black;
+}
+
+.productForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productFormLeft{
+    display: flex;
+flex-direction: column;
+}
+
+.productFormLeft>label {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.productFormLeft> input {
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(112, 112, 112);
+    outline: none;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.productFormLeft>select {
+    margin-bottom: 15px;
+}
+
+
+.productFormRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.productUploader{
+    display: flex;
+align-items: center;
+}
+
+.productFormImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.productFormBtn{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(8, 42, 87);
+    color: #fff;
+    padding: 5px;
+}

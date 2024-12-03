@@ -1,20 +1,18 @@
 import { DataGrid } from '@mui/x-data-grid';
 import { useState } from 'react';
 import { rowUsers } from '../../data';
+import { Link } from 'react-router-dom';
 // import EditIcon from '@mui/icons-material/Edit';
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import './Users.css'
-import { Link } from 'react-router-dom';
-
-
 
 
 const Users = () => {
 
     const [userData, setUserData] = useState(rowUsers)
 
-    const deletHandler =(userId) => {
-        setUserData(userData.filter(user => user.id !== userId) )
+    const deletHandler = (userId) => {
+        setUserData(userData.filter(user => user.id !== userId))
 
     }
 
@@ -30,10 +28,12 @@ const Users = () => {
             width: 200,
             renderCell: (params) => {
                 return (
-                    <div className='userlistUser'>
-                        <img src={params.row.avatar} alt="" className="userListImg" />
-                        <span>{params.row.username}</span>
-                    </div>
+                    <Link to={`/user/${params.row.id}`} className='link'>
+                        <div className='userlistUser'>
+                            <img src={params.row.avatar} alt="" className="userListImg" />
+                            <span>{params.row.username}</span>
+                        </div>
+                    </Link>
                 )
 
             }
@@ -61,7 +61,7 @@ const Users = () => {
                             </button>
                         </Link>
 
-                        <button className="userListRemove" onClick={() => {deletHandler(params.id)}}>
+                        <button className="userListRemove" onClick={() => { deletHandler(params.id) }}>
                             <DeleteOutlinedIcon />
                         </button>
                     </div>
