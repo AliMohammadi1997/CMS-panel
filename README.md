@@ -1,3 +1,30 @@
+# Dashboard Admin (persian)
+
+A fully responsive and feature-rich admin dashboard built with React, JavaScript, and Tailwind CSS for the front-end and MySQL for the back-end. This dashboard is designed to manage and visualize data efficiently.
+---
+
+## 📋 Features
+
+- Responsive Design: Seamlessly adapts to different screen sizes.   
+- Database Integration: Powered by MySQL for back-end operations.  
+- Interactive Visuals: Dynamic charts and data tables.  
+- Modern Tools: Utilizes modern web development technologies for high performance.  
+
+---
+## 🚀 Live Demo
+
+Check out the live version of the project: [Live Demo Link](#)
+
+---
+
+## 🛠️ Technologies Used
+
+### Front-end:
+- JavaScript - Core language for logic and interactions.
+- React.js - Library for building user interfaces.
+-MUI - for chart and table
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
