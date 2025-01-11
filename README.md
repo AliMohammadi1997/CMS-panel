@@ -1,4 +1,4 @@
-# Dashboard Admin (persian)
+# Cms panel
 
 A fully responsive and feature-rich admin dashboard built with React, JavaScript, and Tailwind CSS for the front-end and MySQL for the back-end. This dashboard is designed to manage and visualize data efficiently.
 ---
